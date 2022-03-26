@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+:root {
+  --Brightorange: hsl(31, 77%, 52%);
+  --Darkcyan: hsl(184, 100%, 22%);
+  --Verydarkcyan: hsl(179, 100%, 13%);
+  --Transparentwhite-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Verylightgray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 0.9375rem;
+  font-family: "Lexend Deca", sans-serif;
+  background: var(--Verylightgray-background-headings-buttons);
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+main .container {
+  max-width: 57.375rem;
+  height: 31.1875rem;
+  display: flex;
+  justify-content: center;
+}
+
+main .container > div {
+  padding: 4.375rem 3rem;
+  color: var(--Verylightgray-background-headings-buttons);
+}
+
+main .container .main h1 {
+  margin-top: 2.5rem;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+main .container .sedans {
+  background-color: var(--Brightorange);
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+main .container .sedans button {
+  color: var(--Brightorange);
+}
+
+main .container p {
+  color: var(--Transparentwhite-paragraphs);
+  margin: 1.25rem 0 2.5rem 0;
+  line-height: 25px;
+}
+
+main .container .suvs {
+  background-color: var(--Darkcyan);
+}
+
+main .container .suvs button {
+  color: var(--Darkcyan);
+}
+
+main .container .luxury {
+  background-color: var(--Verydarkcyan);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+main .container .luxury button {
+  color: var(--Verydarkcyan);
+}
+
+main .container .luxury button:hover,
+main .container .sedans button:hover,
+main .container .suvs button:hover {
+  background: transparent;
+  border: 1px solid #fff;
+  color: var(--Verylightgray-background-headings-buttons);
+  cursor: pointer;
+  transition: ease 0.5s;
+}
+
+main .container .main button {
+  padding: 0.625rem;
+  width: 9.0625rem;
+  border-radius: 2rem;
+  border: none;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+main .attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+main .attribution a {
+  color: hsl(22, 85%, 43%);
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .container {
+    flex-direction: column;
+    max-width: 19.6875rem;
+    height: auto;
+    margin: 1.875rem 0.625rem;
+  }
+
+  main .container .sedans {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  main .container .luxury {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}
